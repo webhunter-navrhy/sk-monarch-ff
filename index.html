@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="sk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Monarch FF – tienenie, žalúzie a pergoly | Spišská Nová Ves</title>
+<meta name="description" content="Predaj a montáž vonkajších žalúzií, roliet, screenov, pergol a sietí proti hmyzu v Spišskej Novej Vsi, Poprade a Kežmarku.">
+<style>
+:root{--m:#005293;--md:#004171;--y:#ffd600;--ink:#10202e;--bg:#f5f7fa}
+*{box-sizing:border-box;margin:0}
+body{font:17px/1.6 "Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif;color:var(--ink);background:#fff}
+a{color:inherit}
+.wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+header{position:sticky;top:0;z-index:5;background:#fff;border-bottom:1px solid #e3e8ee}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.logo{font-weight:800;font-size:26px;letter-spacing:.04em;color:var(--m);text-decoration:none;display:flex;align-items:center;gap:10px}
+.logo i{display:block;width:6px;height:28px;background:var(--y);border-radius:2px}
+.logo small{font-weight:600;font-size:13px;color:#4a5b6b;letter-spacing:.12em;margin-left:2px}
+nav{display:flex;gap:26px;font-weight:600;font-size:15px}
+nav a{text-decoration:none;color:var(--ink)}nav a:hover{color:var(--m)}
+.btn{display:inline-block;background:var(--y);color:#1a1a00;font-weight:700;text-decoration:none;padding:13px 24px;border-radius:6px;border:0;font-size:16px;cursor:pointer}
+.btn:hover{background:#ffe433}
+.btn.o{background:transparent;color:#fff;border:2px solid #ffffff88}
+header .btn{padding:9px 18px;font-size:15px}
+.hero{background:var(--md);color:#fff;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:0 0 0 auto;width:46%;background:repeating-linear-gradient(180deg,#ffffff14 0 18px,#ffffff05 18px 26px);clip-path:polygon(18% 0,100% 0,100% 100%,0 100%)}
+.hero .wrap{position:relative;padding:96px 24px 104px;display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+.eyebrow{font-weight:700;letter-spacing:.14em;font-size:13px;color:var(--y);text-transform:uppercase;margin-bottom:16px}
+h1{font-size:clamp(34px,5vw,56px);line-height:1.08;font-weight:800;margin-bottom:22px}
+.hero p{font-size:19px;color:#dce8f3;max-width:540px;margin-bottom:30px}
+.hero .cta{display:flex;gap:14px;flex-wrap:wrap}
+.hero .card{background:#fff;color:var(--ink);border-radius:10px;padding:26px;box-shadow:0 20px 50px #0004}
+.card h3{font-size:18px;margin-bottom:6px}.card p{font-size:15px;color:#4a5b6b;margin:0 0 14px}
+.card a.t{display:block;font-size:22px;font-weight:800;color:var(--m);text-decoration:none}
+.card .s{font-size:14px;color:#4a5b6b;margin-top:2px}
+.usp{background:var(--bg)}
+.usp .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;padding-top:44px;padding-bottom:44px}
+.usp b{display:block;font-size:20px;color:var(--m)}.usp span{color:#4a5b6b;font-size:15px}
+section{padding:80px 0}
+h2{font-size:clamp(28px,3.4vw,40px);line-height:1.15;margin-bottom:12px;color:var(--md)}
+.lead{color:#4a5b6b;max-width:680px;margin-bottom:40px}
+.prod{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
+.p{border:1px solid #e3e8ee;border-radius:10px;overflow:hidden;background:#fff;transition:.2s}
+.p:hover{transform:translateY(-4px);box-shadow:0 14px 30px #0a2a4a1f}
+.p img{width:100%;aspect-ratio:380/260;object-fit:cover;display:block}
+.p div{padding:18px 20px 22px}.p h3{font-size:19px;color:var(--md)}
+.p p{font-size:15px;color:#4a5b6b;margin-top:4px}
+.p.txt{background:var(--m);color:#fff;display:flex}.p.txt div{align-self:center}.p.txt h3,.p.txt p{color:#fff}
+.kroky{background:var(--bg)}
+.st{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;counter-reset:s}
+.st div{counter-increment:s;background:#fff;border-radius:10px;padding:26px;border-top:4px solid var(--y)}
+.st div:before{content:counter(s);display:block;font-size:40px;font-weight:800;color:var(--m);line-height:1;margin-bottom:10px}
+.st h3{font-size:18px;margin-bottom:6px}.st p{font-size:15px;color:#4a5b6b}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.show{background:var(--md);color:#fff;border-radius:12px;padding:40px}
+.show h3{font-size:24px;margin-bottom:10px}.show p{color:#dce8f3;margin-bottom:8px}
+.reg{margin-top:18px;font-weight:600;color:var(--md)}
+.kontakt{background:var(--m);color:#fff}
+.kontakt h2{color:#fff}.kontakt .lead{color:#d6e5f2}
+.kg{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.kg dl{display:grid;gap:18px}.kg dt{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--y);font-weight:700}
+.kg dd{font-size:20px;font-weight:600;margin:0}.kg dd a{text-decoration:none}
+form{background:#fff;color:var(--ink);padding:28px;border-radius:10px;display:grid;gap:12px}
+form label{font-size:14px;font-weight:600}
+input,select,textarea{width:100%;padding:11px 12px;border:1px solid #c9d3de;border-radius:6px;font:inherit;margin-top:4px}
+footer{background:#0b2740;color:#9fb3c6;font-size:14px;padding:26px 0}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+@media(max-width:860px){nav{display:none}.hero .wrap,.two,.kg{grid-template-columns:1fr}.usp .wrap{grid-template-columns:1fr}.st{grid-template-columns:1fr 1fr}.hero:before{width:100%;opacity:.5}section{padding:56px 0}.hero .wrap{padding:60px 24px}}
+@media(max-width:520px){.st{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+ <a class="logo" href="#"><i></i>MONARCH<small>FF</small></a>
+ <nav><a href="#produkty">Produkty</a><a href="#postup">Ako to funguje</a><a href="#showroom">Showroom</a><a href="#kontakt">Kontakt</a></nav>
+ <a class="btn" href="#kontakt">Nezáväzný dopyt</a>
+</div></header>
+
+<div class="hero"><div class="wrap">
+ <div>
+  <div class="eyebrow">Spišská Nová Ves · Poprad · Kežmarok</div>
+  <h1>Tienenie na mieru. Od merania po montáž.</h1>
+  <p>Inštalujeme vonkajšie žalúzie, rolety, pergoly, markízy a siete proti hmyzu. Poradíme s výberom a cenovú ponuku spracujeme zadarmo.</p>
+  <div class="cta"><a class="btn" href="#kontakt">Nezáväzný dopyt</a><a class="btn o" href="#produkty">Ponuka produktov</a></div>
+ </div>
+ <div class="card">
+  <h3>Ozvite sa nám</h3>
+  <p>Poradíme na telefóne aj e-maile.</p>
+  <a class="t" href="tel:+421534464166">+421 534 464 166</a>
+  <div class="s">Po–Pi: 9:00–17:00</div>
+  <a class="t" style="margin-top:12px" href="tel:+421904113291">+421 904 113 291</a>
+  <div class="s">Mobil</div>
+ </div>
+</div></div>
+
+<div class="usp"><div class="wrap">
+ <div><b>Máme skúsenosti</b><span>Dlhé roky montujeme tieniacu techniku.</span></div>
+ <div><b>Záruka 4 roky</b><span>Prvotriedna kvalita, za ktorú ručíme.</span></div>
+ <div><b>Čo sľúbime, to splníme</b><span>Bez ohľadu na veľkosť zákazky.</span></div>
+</div></div>
+
+<section id="produkty"><div class="wrap">
+ <h2>Ponuka produktov</h2>
+ <p class="lead">Sme odborným partnerom výrobcu CLIMAX. Tienenie vyrábame na mieru presne pre Vaše okná.</p>
+ <div class="prod">
+  <div class="p"><img src="img/Z-90-380x260-1.jpg" alt="Vonkajšie žalúzie" loading="lazy"><div><h3>Vonkajšie tienenie</h3><p>Vonkajšie žalúzie, rolety a screenové rolety.</p></div></div>
+  <div class="p"><img src="img/Hlinikova-pergola-Lamelino-380x260-1.jpg" alt="Hliníková pergola" loading="lazy"><div><h3>Tienenie na terasy</h3><p>Pergoly, markízy a tienenie zimných záhrad.</p></div></div>
+  <div class="p"><img src="img/Latkova-roleta-Varieta-380x260-1.jpg" alt="Látková roleta" loading="lazy"><div><h3>Vnútorné tienenie</h3><p>Vnútorné žalúzie a látkové tienenie.</p></div></div>
+  <div class="p"><img src="img/Plise-sit-380x260-1.jpg" alt="Plisé sieť proti hmyzu" loading="lazy"><div><h3>Siete proti hmyzu</h3><p>Dverné a okenné siete.</p></div></div>
+  <div class="p"><img src="img/Pristresek-380.jpg" alt="Prístrešok na auto" loading="lazy"><div><h3>Prístrešky na auto</h3><p>Prístrešky na mieru.</p></div></div>
+  <div class="p txt"><div><h3>Inteligentná domácnosť</h3><p>Ovládanie tienenia a motorizácia.</p></div></div>
+ </div>
+</div></section>
+
+<section id="postup" class="kroky"><div class="wrap">
+ <h2>Cesta k Vášmu tieneniu je rýchla a jednoduchá</h2>
+ <p class="lead">Na úvod nepotrebujeme vedieť veľa: typ produktu, farbu, približné rozmery a spôsob ovládania.</p>
+ <div class="st">
+  <div><h3>Nezáväzný dopyt</h3><p>Zavolajte nám alebo vyplňte formulár. Cenovú ponuku spracujeme zadarmo.</p></div>
+  <div><h3>Zameranie</h3><p>Po odsúhlasení ponuky prídeme všetko zamerať a dohodneme detaily.</p></div>
+  <div><h3>Výroba</h3><p>Tienenie sa vyrába na mieru, dodanie preto chvíľu potrvá.</p></div>
+  <div><h3>Montáž</h3><p>Keď bude tienenie vyrobené, prídeme ho namontovať.</p></div>
+ </div>
+</div></section>
+
+<section id="showroom"><div class="wrap two">
+ <div>
+  <h2>Radšej osobne? Pozrite si vzorky u nás.</h2>
+  <p class="lead" style="margin-bottom:18px">V showroome v Spišskej Novej Vsi nájdete vzorky a produkty spoločnosti CLIMAX a ďalších. Lepšie raz vidieť ako stokrát počuť.</p>
+  <p class="reg">Pôsobíme v Spišskej Novej Vsi, Poprade, Kežmarku a okolí.</p>
+ </div>
+ <div class="show"><h3>Showroom</h3><p>Duklianska 38<br>Spišská Nová Ves</p><p>Po–Pi: 9:00–17:00</p></div>
+</div></section>
+
+<section id="kontakt" class="kontakt"><div class="wrap kg">
+ <div>
+  <h2>Nezáväzný dopyt</h2>
+  <p class="lead">Či už staviate, renovujete, alebo chcete len viac pohodlia, pripravíme Vám ponuku zadarmo. Obvykle odpovieme do 24 hodín.</p>
+  <dl>
+   <div><dt>Telefón</dt><dd><a href="tel:+421534464166">+421 534 464 166</a><br><a href="tel:+421904113291">+421 904 113 291</a></dd></div>
+   <div><dt>E-mail</dt><dd><a href="mailto:fanta@monarch-climax.sk">fanta@monarch-climax.sk</a></dd></div>
+   <div><dt>Showroom</dt><dd>Duklianska 38, Spišská Nová Ves</dd></div>
+  </dl>
+ </div>
+ <form onsubmit="event.preventDefault();alert('Ukážková verzia: formulár sa v návrhu neodosiela.')">
+  <label>Meno<input required></label>
+  <label>E-mail alebo telefón<input required></label>
+  <label>Produkt<select><option>Vonkajšie žalúzie</option><option>Vonkajšie rolety</option><option>Screenové rolety</option><option>Pergola / markíza</option><option>Vnútorné tienenie</option><option>Siete proti hmyzu</option><option>Prístrešok na auto</option></select></label>
+  <label>Správa (rozmery, farba, ovládanie)<textarea rows="4"></textarea></label>
+  <button class="btn" type="submit">Odoslať dopyt</button>
+ </form>
+</div></section>
+
+<footer><div class="wrap"><span>© MONARCH – František Fanta · IČO 30667526 · Spišská Nová Ves</span><span>Ukážkový návrh webu od WebHunter</span></div></footer>
+</body></html>
